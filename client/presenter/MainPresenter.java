@@ -20,6 +20,7 @@ public class MainPresenter extends Presenter{
 	public void initAsyncReader()
 	{
 		Thread readerThread = new Thread(new IncomingReader());
+		readerThread.start();
 	}
 	public void sendMessageToServer(String message)
 	{
