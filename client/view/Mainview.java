@@ -52,7 +52,7 @@ public class Mainview extends JPanel implements View,ActionListener{
 	}
 	public void setIncomingMessage(String message)
 	{
-		incoming.append(message);
+		incoming.append("\n"+message);
 	}
 	@Override
 	public void close() {

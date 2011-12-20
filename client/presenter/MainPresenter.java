@@ -25,6 +25,7 @@ public class MainPresenter extends Presenter{
 	public void sendMessageToServer(String message)
 	{
 		((chat.MyConnection)Session.get("Connection")).writer.println(message);
+		((chat.MyConnection)Session.get("Connection")).writer.flush();
 	}
 	public  class IncomingReader implements Runnable
 	{
